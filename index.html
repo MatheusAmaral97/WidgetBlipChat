@@ -8,6 +8,33 @@
     <title>Document</title>
 </head>
 
+<style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: bisque;
+    }
+    #myModal {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+    .myModalContent {
+        text-align: center;
+        width: 100%;
+        height: 90%;
+    }
+
+    .iframe-chatbot {
+        width: 100%;
+        height: 100%;
+    }
+</style>
+
 <body>
     <div id="myModal">
         <div class="myModalContent">
@@ -21,7 +48,7 @@
         (function () {
             window.onload = function () {
                 new BlipChat()
-                    .withCustomMessageMetadata({ pageOrigin: window.location.href + '?widget=home' })
+                    .withCustomMessageMetadata({ pageOrigin: window.location.href + '?widget=anuncio_patrocinado' })
                     .withAppKey('aG1nY3VsdHVyYWluZ2xlc2Fyb3V0ZXI6NDk2MzkxMmItNWRlOS00NThlLTg5ZWYtMjQ4MTI5MWIxZDlm')
                     .withButton({ "color": "#fb1a02", "icon": "" })
                     .withTarget('iframe')
