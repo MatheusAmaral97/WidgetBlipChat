@@ -15,7 +15,7 @@
         padding: 0;
         background-color: bisque;
     }
-    #myModal {
+    #myModal{
         position: fixed;
         top: 0;
         right: 0;
@@ -45,10 +45,39 @@
 
     <script src="https://unpkg.com/blip-chat-widget" type="text/javascript"></script>
     <script>
+        //CTRL K U ou CTRL K C
+        /*Widget de teste de nível em ambiente de homologação*/
+        
+        // (function () {
+        //     window.onload = function () {
+        //         new BlipChat()
+        //             .withCustomMessageMetadata({ pageOrigin: window.location.href + '?widget=Site' })
+        //             .withAppKey('cm91dGVydGVzdGVuaXZlbDoyNmI2N2EzOC1hYTRiLTQ4NGQtYWIxZC0yZTRlOWIwZWEzYjg=')
+        //             .withButton({ "color": "#fb1a02", "icon": "" })
+        //             .withTarget('iframe')
+        //             .withCustomCommonUrl('https://culturainglesa.chat.blip.ai/')
+        //             .build();
+        //     }
+        // })();
+        
+        // /*Widget de teste de nível em ambiente de produção*/        
+        // (function () {
+        //     window.onload = function () {
+        //         new BlipChat()
+        //             .withCustomMessageMetadata({ pageOrigin: window.location.href + '?widget=Site' })
+        //             .withAppKey('Y3VsdGluZ2xlc2Fyb3V0ZXJuaXZlbDoxOGJhOWYyOS00ZDE2LTRjZjktOTdiMy01YTE5NGMzMzFlY2U=')
+        //             .withButton({ "color": "#fb1a02", "icon": "" })
+        //             .withTarget('iframe-teste-de-nivel-prod')
+        //             .withCustomCommonUrl('https://culturainglesa.chat.blip.ai/')
+        //             .build();
+        //     }
+        // })();
+        
+        /*Widget de teste de atendimento em ambiente de homologação*/
         (function () {
             window.onload = function () {
                 new BlipChat()
-                    .withCustomMessageMetadata({ pageOrigin: window.location.href + '?widget=anuncio_patrocinado' })
+                    .withCustomMessageMetadata({ pageOrigin: window.location.href + '?widget=Site' })
                     .withAppKey('aG1nY3VsdHVyYWluZ2xlc2Fyb3V0ZXI6NDk2MzkxMmItNWRlOS00NThlLTg5ZWYtMjQ4MTI5MWIxZDlm')
                     .withButton({ "color": "#fb1a02", "icon": "" })
                     .withTarget('iframe')
@@ -56,6 +85,19 @@
                     .build();
             }
         })();
+
+        /*Widget de teste de atendimento em ambiente de produção*/
+        // (function () {
+        //     window.onload = function () {
+        //         new BlipChat()
+        //             .withCustomMessageMetadata({ pageOrigin: window.location.href + '?widget=Site' })
+        //             .withAppKey('cHJvZGN1bHR1cmFpbmdsZXNhcm91dGVyOmY0ZTA2MGFkLTNmZmUtNDI1OS1iYWI0LTdlNWYwNmE5YzdlNA==')
+        //             .withButton({ "color": "#fb1a02", "icon": "" })
+        //             .withTarget('iframe')
+        //             .withCustomCommonUrl('https://culturainglesa.chat.blip.ai/')
+        //             .build();
+        //     }
+        // })();
     </script>
 </body>
 
